@@ -1,5 +1,4 @@
-php-simple-html-dom-parser
-==========================
+# php-simple-html-dom-parser
 
 Version 1.5.2
 
@@ -14,28 +13,20 @@ Extract contents from HTML in a single line.
 http://simplehtmldom.sourceforge.net/
 
 
-Install
--------
+## Install
 
- composer.phar
-```json
-"require": {
-    "sunra/php-simple-html-dom-parser": "1.5.2"
-    }
+```
+composer require tdebatty/php-simple-html-dom-parser
 ```
 
-Usage
------
+## Usage
 
 ```php
-use Sunra\PhpSimple\HtmlDomParser;
+use debatty\PhpSimple\HtmlDomParser;
 
-...
 $dom = HtmlDomParser::str_get_html( $str );
-or 
+// or
 $dom = HtmlDomParser::file_get_html( $file_name );
 
 $elems = $dom->find($elem_name);
-...
-
 ```
