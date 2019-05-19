@@ -22,11 +22,11 @@ composer require tdebatty/php-simple-html-dom-parser
 ## Usage
 
 ```php
-use debatty\PhpSimple\HtmlDomParser;
+use tdebatty\PhpSimple\HtmlDomParser;
 
-$dom = HtmlDomParser::str_get_html( $str );
+$dom = HtmlDomParser::str_get_html($str);
 // or
-$dom = HtmlDomParser::file_get_html( $file_name );
+$dom = HtmlDomParser::file_get_html($file_name);
 
 $elems = $dom->find($elem_name);
 ```
